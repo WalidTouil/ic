@@ -79,6 +79,7 @@ pipeline {
                 stage('Email Notification') {
             steps {
                 echo 'Sending Email....'
+                emailtext attachLog: true,
 mail bcc: '', body: 'This is a test', cc: 'walid.touil@esprit.tn', from: '', replyTo: '', subject: 'Test Mail Jenkins', to: 'walid.touil@esprit.tn'            }
         }
         }
