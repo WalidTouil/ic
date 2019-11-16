@@ -82,7 +82,7 @@ pipeline {
     always {  
              
             emailext attachLog: true,
-            body: 'This is a mail from Jenkins',to: "walid.touil@esprit.tn", subject:'test'
+            body: 'This is a testing mail',to: "walid.touil@esprit.tn", subject:'Test'
             
         }
     }
